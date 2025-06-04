@@ -1,0 +1,75 @@
+body {
+  background: #1a1a1a;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 60px 20px;
+  min-height: 100vh;
+}
+
+.note {
+  width: 220px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+  background: linear-gradient(145deg, #292929, #1e1e1e);
+  border: 1px solid #444;
+  color: #fff;
+  position: relative;
+  transition: transform 0.5s, box-shadow 0.3s;
+}
+
+.note:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.25);
+}
+
+.high-priority {
+  border-left: 5px solid #ff4d4d;
+  box-shadow: 0 0 15px rgba(255, 77, 77, 0.6);
+}
+
+.medium-priority {
+  border-left: 5px solid #66dbff;
+  box-shadow: 0 0 15px rgba(255, 224, 102, 0.6);
+}
+
+.low-priority {
+  border-left: 5px solid #66ff99;
+  box-shadow: 0 0 15px rgba(102, 255, 153, 0.6);
+}
+
+.note strong {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-shadow: 0 0 5px #ffffff99;
+}
+
+.note ul {
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+.note li {
+  margin-bottom: 8px;
+}
+
+.note a {
+  text-decoration: none;
+  color: #ddd;
+  transition: color 0.1s, text-shadow 0.3s;
+}
+
+.note a:hover {
+  color: #fff;
+  text-shadow: 0 0 8px #ffffffaa;
+}
